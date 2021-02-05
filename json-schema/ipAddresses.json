@@ -1,12 +1,19 @@
 {
   "$id": "ipAddresses",
-  "schema": {
-  "title": "cidrStr",
-  "$ref": "ipAddresses#/definitions/ipv4CIDR"
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IP Addresses",
+  "description": "IP Address parameters and returned data.",
+  "definitions": {
+          "ipv4CIDR": {},
+    "hostIpv4AndIpv6Address": {}
 }
   "title": "IP Addresses",
   "description": "IP Address parameters and returned data.",
-  "definitions": "definitions": {
+  "definitions": {
+      "schema": {
+  "title": "cidrStr",
+  "$ref": "ipAddresses#/definitions/ipv4CIDR"
+}
     "ipv4CIDR": {
       "type": "string",
       "description": "An IPv4 subnet expressed in CIDR notation.",
