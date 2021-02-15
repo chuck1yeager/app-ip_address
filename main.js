@@ -51,7 +51,7 @@ class IpAddress {
      * @param {callback} callback - A callback function.
      * @return {string} (firstIpAddress) - An IPv4 address.
      */
-    getFirstIpAddress(cidrStr, callback) {
+    getFirstIpAddress(cidrStr, callback) 
 
     // Initialize return arguments for callback
     let firstIpAddress = null;
@@ -66,8 +66,8 @@ class IpAddress {
     // This returns an array with a single element, the first host address from the subnet.
     const options = {
         from: 1,
-        limit: 1
-    };
+        limit: 1 
+        };
 
     // Use the object's isValid() method to verify the passed CIDR.
     if (!cidr.isValid()) {
@@ -95,7 +95,7 @@ class IpAddress {
     // The IAP convention is to pass returned data as the first argument and error
     // data as the second argument to the callback function.
     return callback(jsonObject, callbackError);
-    }
-}
+    
+
 
 module.exports = new IpAddress;

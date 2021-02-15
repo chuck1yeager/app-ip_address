@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/chuck1yeager/app-ip_address#readme",
   "dependencies": {
-    "ip-cidr": "^2.0.13"
-  }
+    "ip-cidr": "^2.1.1"
+  },
+  "devDependencies": {}
 }
