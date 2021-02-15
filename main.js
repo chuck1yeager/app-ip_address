@@ -43,7 +43,7 @@ class IpAddress {
   }
 }
     
-
+    
     /**
      * Calculate and return the first host IP address from a CIDR subnet.
      * @param {string} cidrStr - The IPv4 subnet expressed
