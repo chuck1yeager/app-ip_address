@@ -53,6 +53,8 @@ class IpAddress {
      */
     getFirstIpAddress(cidrStr, callback) 
 
+    getFirstIpAddress(cidrStr, callback) 
+
     // Initialize return arguments for callback
     let firstIpAddress = null;
     let firstIpAddressV6 = null; 
@@ -66,8 +68,9 @@ class IpAddress {
     // This returns an array with a single element, the first host address from the subnet.
     const options = {
         from: 1,
-        limit: 1 
-        };
+        limit: 1
+    };
+
 
     // Use the object's isValid() method to verify the passed CIDR.
     if (!cidr.isValid()) {
